@@ -1,2 +1,2 @@
-# BayManagement
-Bay Management System
+# SuiteManagement
+Suite Management System
