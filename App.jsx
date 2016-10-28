@@ -234,6 +234,7 @@ export class CustomShape extends React.Component
     alignmentBaseline : 'central'
   };
     return(
+           <div id="WorkLocation">
             <svg>
             {this.props.items.map(item => (
                 <g key={item.id} width={item.width} height={item.height}>
@@ -242,15 +243,13 @@ export class CustomShape extends React.Component
                     <text fill="white" textAnchor="middle" alignmentBaseline="central"
                           x={parseInt(item.xAxis)+(parseInt(item.width)/2)} 
                           y={parseInt(item.yAxis)+(parseInt(item.height)/2)}> {item.text} </text>
-                    if(item.polyline != "")
-                    {
-                       <polyline points={item.polyline} style={item.polyStyle} />
-                    }      
+                         
                 </g>
               ))
             }
             </svg>
-      )
+          </div>
+       )
   }
 }
 

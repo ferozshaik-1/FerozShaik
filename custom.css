@@ -4,3 +4,9 @@ th {
 td.Icon {
     text-align: center;
 }
+div#WorkLocation {
+    transform: translate(15%,10%);
+    width: 1000px;
+    height: 650px;
+    overflow: auto;
+}
